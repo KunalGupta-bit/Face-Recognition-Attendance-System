@@ -1,4 +1,8 @@
 from flask import Flask
+<<<<<<< HEAD
+from pymongo import MongoClient
+from flask_jwt_extended import JWTManager
+from flask import Flask
 from pymongo import MongoClient
 from flask_jwt_extended import JWTManager
 from config import Config
@@ -35,3 +39,11 @@ app = create_app()
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+@app.route('/')
+def index():
+    return 'Face Recognition attendance system'
+
+if __name__ == '__main__':
+    app.run(debug=True)
+>>>>>>> 4f2604f1b250a70264f052be6d43883c81af2827
